@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
+		F9DE21392B1111C1007B1133 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21382B1111C1007B1133 /* ContentView.swift */; };
+		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
+		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
+		F9DE21492B1111C2007B1133 /* ClipyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21482B1111C2007B1133 /* ClipyTests.swift */; };
+		F9DE21532B1111C2007B1133 /* ClipyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21522B1111C2007B1133 /* ClipyUITests.swift */; };
+		F9DE21552B1111C2007B1133 /* ClipyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21542B1111C2007B1133 /* ClipyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9DE21452B1111C2007B1133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9DE212B2B1111C1007B1133 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9DE21322B1111C1007B1133;
+			remoteInfo = Clipy;
+		};
+		F9DE214F2B1111C2007B1133 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9DE212B2B1111C1007B1133 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9DE21322B1111C1007B1133;
+			remoteInfo = Clipy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9DE21332B1111C1007B1133 /* Clipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DE21362B1111C1007B1133 /* ClipyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyApp.swift; sourceTree = "<group>"; };
+		F9DE21382B1111C1007B1133 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9DE213A2B1111C2007B1133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9DE213F2B1111C2007B1133 /* Clipy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipy.entitlements; sourceTree = "<group>"; };
+		F9DE21442B1111C2007B1133 /* ClipyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DE21482B1111C2007B1133 /* ClipyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyTests.swift; sourceTree = "<group>"; };
+		F9DE214E2B1111C2007B1133 /* ClipyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DE21522B1111C2007B1133 /* ClipyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyUITests.swift; sourceTree = "<group>"; };
+		F9DE21542B1111C2007B1133 /* ClipyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9DE21302B1111C1007B1133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DE21412B1111C2007B1133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DE214B2B1111C2007B1133 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9DE212A2B1111C1007B1133 = {
+			isa = PBXGroup;
+			children = (
+				F9DE21352B1111C1007B1133 /* Clipy */,
+				F9DE21472B1111C2007B1133 /* ClipyTests */,
+				F9DE21512B1111C2007B1133 /* ClipyUITests */,
+				F9DE21342B1111C1007B1133 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9DE21342B1111C1007B1133 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE21332B1111C1007B1133 /* Clipy.app */,
+				F9DE21442B1111C2007B1133 /* ClipyTests.xctest */,
+				F9DE214E2B1111C2007B1133 /* ClipyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9DE21352B1111C1007B1133 /* Clipy */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE21362B1111C1007B1133 /* ClipyApp.swift */,
+				F9DE21382B1111C1007B1133 /* ContentView.swift */,
+				F9DE213A2B1111C2007B1133 /* Assets.xcassets */,
+				F9DE213F2B1111C2007B1133 /* Clipy.entitlements */,
+				F9DE213C2B1111C2007B1133 /* Preview Content */,
+			);
+			path = Clipy;
+			sourceTree = "<group>";
+		};
+		F9DE213C2B1111C2007B1133 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9DE21472B1111C2007B1133 /* ClipyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE21482B1111C2007B1133 /* ClipyTests.swift */,
+			);
+			path = ClipyTests;
+			sourceTree = "<group>";
+		};
+		F9DE21512B1111C2007B1133 /* ClipyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE21522B1111C2007B1133 /* ClipyUITests.swift */,
+				F9DE21542B1111C2007B1133 /* ClipyUITestsLaunchTests.swift */,
+			);
+			path = ClipyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9DE21322B1111C1007B1133 /* Clipy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9DE21582B1111C2007B1133 /* Build configuration list for PBXNativeTarget "Clipy" */;
+			buildPhases = (
+				F9DE212F2B1111C1007B1133 /* Sources */,
+				F9DE21302B1111C1007B1133 /* Frameworks */,
+				F9DE21312B1111C1007B1133 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clipy;
+			productName = Clipy;
+			productReference = F9DE21332B1111C1007B1133 /* Clipy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9DE21432B1111C2007B1133 /* ClipyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9DE215B2B1111C2007B1133 /* Build configuration list for PBXNativeTarget "ClipyTests" */;
+			buildPhases = (
+				F9DE21402B1111C2007B1133 /* Sources */,
+				F9DE21412B1111C2007B1133 /* Frameworks */,
+				F9DE21422B1111C2007B1133 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9DE21462B1111C2007B1133 /* PBXTargetDependency */,
+			);
+			name = ClipyTests;
+			productName = ClipyTests;
+			productReference = F9DE21442B1111C2007B1133 /* ClipyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9DE214D2B1111C2007B1133 /* ClipyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9DE215E2B1111C2007B1133 /* Build configuration list for PBXNativeTarget "ClipyUITests" */;
+			buildPhases = (
+				F9DE214A2B1111C2007B1133 /* Sources */,
+				F9DE214B2B1111C2007B1133 /* Frameworks */,
+				F9DE214C2B1111C2007B1133 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9DE21502B1111C2007B1133 /* PBXTargetDependency */,
+			);
+			name = ClipyUITests;
+			productName = ClipyUITests;
+			productReference = F9DE214E2B1111C2007B1133 /* ClipyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9DE212B2B1111C1007B1133 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F9DE21322B1111C1007B1133 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					F9DE21432B1111C2007B1133 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F9DE21322B1111C1007B1133;
+					};
+					F9DE214D2B1111C2007B1133 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = F9DE21322B1111C1007B1133;
+					};
+				};
+			};
+			buildConfigurationList = F9DE212E2B1111C1007B1133 /* Build configuration list for PBXProject "Clipy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9DE212A2B1111C1007B1133;
+			productRefGroup = F9DE21342B1111C1007B1133 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9DE21322B1111C1007B1133 /* Clipy */,
+				F9DE21432B1111C2007B1133 /* ClipyTests */,
+				F9DE214D2B1111C2007B1133 /* ClipyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9DE21312B1111C1007B1133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */,
+				F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DE21422B1111C2007B1133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DE214C2B1111C2007B1133 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9DE212F2B1111C1007B1133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DE21392B1111C1007B1133 /* ContentView.swift in Sources */,
+				F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DE21402B1111C2007B1133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DE21492B1111C2007B1133 /* ClipyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9DE214A2B1111C2007B1133 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DE21552B1111C2007B1133 /* ClipyUITestsLaunchTests.swift in Sources */,
+				F9DE21532B1111C2007B1133 /* ClipyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9DE21462B1111C2007B1133 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9DE21322B1111C1007B1133 /* Clipy */;
+			targetProxy = F9DE21452B1111C2007B1133 /* PBXContainerItemProxy */;
+		};
+		F9DE21502B1111C2007B1133 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9DE21322B1111C1007B1133 /* Clipy */;
+			targetProxy = F9DE214F2B1111C2007B1133 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F9DE21562B1111C2007B1133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9DE21572B1111C2007B1133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		F9DE21592B1111C2007B1133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Clipy/Clipy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Clipy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.Clipy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F9DE215A2B1111C2007B1133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Clipy/Clipy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Clipy/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.Clipy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F9DE215C2B1111C2007B1133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.ClipyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clipy";
+			};
+			name = Debug;
+		};
+		F9DE215D2B1111C2007B1133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.ClipyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clipy.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Clipy";
+			};
+			name = Release;
+		};
+		F9DE215F2B1111C2007B1133 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.ClipyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Clipy;
+			};
+			name = Debug;
+		};
+		F9DE21602B1111C2007B1133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.ClipyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Clipy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9DE212E2B1111C1007B1133 /* Build configuration list for PBXProject "Clipy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9DE21562B1111C2007B1133 /* Debug */,
+				F9DE21572B1111C2007B1133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9DE21582B1111C2007B1133 /* Build configuration list for PBXNativeTarget "Clipy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9DE21592B1111C2007B1133 /* Debug */,
+				F9DE215A2B1111C2007B1133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9DE215B2B1111C2007B1133 /* Build configuration list for PBXNativeTarget "ClipyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9DE215C2B1111C2007B1133 /* Debug */,
+				F9DE215D2B1111C2007B1133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9DE215E2B1111C2007B1133 /* Build configuration list for PBXNativeTarget "ClipyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9DE215F2B1111C2007B1133 /* Debug */,
+				F9DE21602B1111C2007B1133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9DE212B2B1111C1007B1133 /* Project object */;
+}
