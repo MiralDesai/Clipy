@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
-		F9DE21392B1111C1007B1133 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21382B1111C1007B1133 /* ContentView.swift */; };
 		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
 		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
 		F9DE21492B1111C2007B1133 /* ClipyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21482B1111C2007B1133 /* ClipyTests.swift */; };
 		F9DE21532B1111C2007B1133 /* ClipyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21522B1111C2007B1133 /* ClipyUITests.swift */; };
 		F9DE21552B1111C2007B1133 /* ClipyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21542B1111C2007B1133 /* ClipyUITestsLaunchTests.swift */; };
+		F9DE21622B11684B007B1133 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21612B11684B007B1133 /* SettingsView.swift */; };
+		F9DE21642B116C8D007B1133 /* GeneralSettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */; };
+		F9DE21662B1171D5007B1133 /* AppearanceSettingsTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		F9DE21332B1111C1007B1133 /* Clipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DE21362B1111C1007B1133 /* ClipyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyApp.swift; sourceTree = "<group>"; };
-		F9DE21382B1111C1007B1133 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9DE213A2B1111C2007B1133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F9DE213F2B1111C2007B1133 /* Clipy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clipy.entitlements; sourceTree = "<group>"; };
@@ -45,6 +46,9 @@
 		F9DE214E2B1111C2007B1133 /* ClipyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClipyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DE21522B1111C2007B1133 /* ClipyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyUITests.swift; sourceTree = "<group>"; };
 		F9DE21542B1111C2007B1133 /* ClipyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9DE21612B11684B007B1133 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettingsTabView.swift; sourceTree = "<group>"; };
+		F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceSettingsTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +100,9 @@
 			isa = PBXGroup;
 			children = (
 				F9DE21362B1111C1007B1133 /* ClipyApp.swift */,
-				F9DE21382B1111C1007B1133 /* ContentView.swift */,
+				F9DE21612B11684B007B1133 /* SettingsView.swift */,
+				F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */,
+				F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */,
 				F9DE213A2B1111C2007B1133 /* Assets.xcassets */,
 				F9DE213F2B1111C2007B1133 /* Clipy.entitlements */,
 				F9DE213C2B1111C2007B1133 /* Preview Content */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9DE21392B1111C1007B1133 /* ContentView.swift in Sources */,
+				F9DE21642B116C8D007B1133 /* GeneralSettingsTabView.swift in Sources */,
+				F9DE21622B11684B007B1133 /* SettingsView.swift in Sources */,
 				F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */,
+				F9DE21662B1171D5007B1133 /* AppearanceSettingsTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

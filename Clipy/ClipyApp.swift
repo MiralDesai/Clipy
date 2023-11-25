@@ -12,10 +12,13 @@ struct ClipyApp: App {
   @State private var command: String = "a"
   
   var body: some Scene {
+    Settings {
+      SettingsView().frame(maxWidth: .infinity)
+    }.windowResizability(.automatic)
     MenuBarExtra(command, systemImage: "\(command).circle") {
-      Button("Uno") { command = "a" }.keyboardShortcut("U")
-
+//      let pasteboard = NSPasteboard.general
       Divider()
+      SettingsLink{ Text("Preferences") }.keyboardShortcut(",")
       Button("Quit") { NSApplication.shared.terminate(nil) }.keyboardShortcut("Q")
     }
   }
