@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F983C1E32B13CD1C00D7282E /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F983C1E22B13CD1C00D7282E /* swiftlint.yml */; };
 		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
 		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
 		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F983C1E22B13CD1C00D7282E /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
 		F9DE21332B1111C1007B1133 /* Clipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DE21362B1111C1007B1133 /* ClipyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyApp.swift; sourceTree = "<group>"; };
 		F9DE213A2B1111C2007B1133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				F9DE213A2B1111C2007B1133 /* Assets.xcassets */,
 				F9DE213F2B1111C2007B1133 /* Clipy.entitlements */,
 				F9DE213C2B1111C2007B1133 /* Preview Content */,
+				F983C1E22B13CD1C00D7282E /* swiftlint.yml */,
 			);
 			path = Clipy;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				F9DE212F2B1111C1007B1133 /* Sources */,
 				F9DE21302B1111C1007B1133 /* Frameworks */,
 				F9DE21312B1111C1007B1133 /* Resources */,
+				F983C1E12B13CB4600D7282E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -240,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */,
+				F983C1E32B13CD1C00D7282E /* swiftlint.yml in Resources */,
 				F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +264,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F983C1E12B13CB4600D7282E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F9DE212F2B1111C1007B1133 /* Sources */ = {
@@ -434,6 +460,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Clipy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -460,6 +487,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Clipy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";

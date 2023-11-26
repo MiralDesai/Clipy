@@ -9,16 +9,15 @@ import SwiftUI
 
 @main
 struct ClipyApp: App {
-  @State private var command: String = "a"
-  
   var body: some Scene {
     Settings {
       SettingsView().frame(maxWidth: .infinity)
     }.windowResizability(.automatic)
-    MenuBarExtra(command, systemImage: "\(command).circle") {
+    MenuBarExtra("a", systemImage: "a.circle") {
 //      let pasteboard = NSPasteboard.general
+      Button("Log") { CopyListener.do_something() }
       Divider()
-      SettingsLink{ Text("Preferences") }.keyboardShortcut(",")
+      SettingsLink {Text("Preferences")}.keyboardShortcut(",")
       Button("Quit") { NSApplication.shared.terminate(nil) }.keyboardShortcut("Q")
     }
   }
