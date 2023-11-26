@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F983C1E32B13CD1C00D7282E /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F983C1E22B13CD1C00D7282E /* swiftlint.yml */; };
+		F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D02B13ECB900E153AC /* AppMenu.swift */; };
 		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
 		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
 		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		F983C1E22B13CD1C00D7282E /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		F9C4D9D02B13ECB900E153AC /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		F9DE21332B1111C1007B1133 /* Clipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DE21362B1111C1007B1133 /* ClipyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyApp.swift; sourceTree = "<group>"; };
 		F9DE213A2B1111C2007B1133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F983C1DE2B13C74A00D7282E /* Listeners */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Listeners;
+			sourceTree = "<group>";
+		};
+		F9C4D9CD2B13E9A100E153AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */,
+				F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */,
+				F9DE21612B11684B007B1133 /* SettingsView.swift */,
+				F9C4D9D02B13ECB900E153AC /* AppMenu.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		F9DE212A2B1111C1007B1133 = {
 			isa = PBXGroup;
 			children = (
@@ -101,10 +121,9 @@
 		F9DE21352B1111C1007B1133 /* Clipy */ = {
 			isa = PBXGroup;
 			children = (
+				F983C1DE2B13C74A00D7282E /* Listeners */,
+				F9C4D9CD2B13E9A100E153AC /* Views */,
 				F9DE21362B1111C1007B1133 /* ClipyApp.swift */,
-				F9DE21612B11684B007B1133 /* SettingsView.swift */,
-				F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */,
-				F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */,
 				F9DE213A2B1111C2007B1133 /* Assets.xcassets */,
 				F9DE213F2B1111C2007B1133 /* Clipy.entitlements */,
 				F9DE213C2B1111C2007B1133 /* Preview Content */,
@@ -294,6 +313,7 @@
 				F9DE21642B116C8D007B1133 /* GeneralSettingsTabView.swift in Sources */,
 				F9DE21622B11684B007B1133 /* SettingsView.swift in Sources */,
 				F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */,
+				F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */,
 				F9DE21662B1171D5007B1133 /* AppearanceSettingsTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
