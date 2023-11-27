@@ -11,6 +11,8 @@
 		F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D02B13ECB900E153AC /* AppMenu.swift */; };
 		F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D22B13F33F00E153AC /* CopyListener.swift */; };
 		F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D42B14124E00E153AC /* AppDelegate.swift */; };
+		F9D8E01E2B153BBF005CEEDD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F9D8E01D2B153BBF005CEEDD /* Realm */; };
+		F9D8E0202B153BBF005CEEDD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F9D8E01F2B153BBF005CEEDD /* RealmSwift */; };
 		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
 		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
 		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
@@ -64,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9D8E0202B153BBF005CEEDD /* RealmSwift in Frameworks */,
+				F9D8E01E2B153BBF005CEEDD /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +184,10 @@
 			dependencies = (
 			);
 			name = Clipy;
+			packageProductDependencies = (
+				F9D8E01D2B153BBF005CEEDD /* Realm */,
+				F9D8E01F2B153BBF005CEEDD /* RealmSwift */,
+			);
 			productName = Clipy;
 			productReference = F9DE21332B1111C1007B1133 /* Clipy.app */;
 			productType = "com.apple.product-type.application";
@@ -252,6 +260,9 @@
 				Base,
 			);
 			mainGroup = F9DE212A2B1111C1007B1133;
+			packageReferences = (
+				F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = F9DE21342B1111C1007B1133 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -639,6 +650,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.44.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F9D8E01D2B153BBF005CEEDD /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		F9D8E01F2B153BBF005CEEDD /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9DE212B2B1111C1007B1133 /* Project object */;
 }
