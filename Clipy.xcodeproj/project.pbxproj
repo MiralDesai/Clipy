@@ -99,12 +99,28 @@
 		F9C4D9CD2B13E9A100E153AC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */,
-				F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */,
-				F9DE21612B11684B007B1133 /* SettingsView.swift */,
-				F9C4D9D02B13ECB900E153AC /* AppMenu.swift */,
+				F9D8E0222B153FA6005CEEDD /* Settings */,
+				F9D8E0212B153F6E005CEEDD /* Menubar */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F9D8E0212B153F6E005CEEDD /* Menubar */ = {
+			isa = PBXGroup;
+			children = (
+				F9C4D9D02B13ECB900E153AC /* AppMenu.swift */,
+			);
+			path = Menubar;
+			sourceTree = "<group>";
+		};
+		F9D8E0222B153FA6005CEEDD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F9DE21612B11684B007B1133 /* SettingsView.swift */,
+				F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */,
+				F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		F9DE212A2B1111C1007B1133 = {
