@@ -13,6 +13,7 @@
 		F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D42B14124E00E153AC /* AppDelegate.swift */; };
 		F9D8E01E2B153BBF005CEEDD /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = F9D8E01D2B153BBF005CEEDD /* Realm */; };
 		F9D8E0202B153BBF005CEEDD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F9D8E01F2B153BBF005CEEDD /* RealmSwift */; };
+		F9D8E0252B15504B005CEEDD /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8E0242B15504B005CEEDD /* Realm.swift */; };
 		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
 		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
 		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		F9C4D9D02B13ECB900E153AC /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		F9C4D9D22B13F33F00E153AC /* CopyListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListener.swift; sourceTree = "<group>"; };
 		F9C4D9D42B14124E00E153AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9D8E0242B15504B005CEEDD /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		F9DE21332B1111C1007B1133 /* Clipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DE21362B1111C1007B1133 /* ClipyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyApp.swift; sourceTree = "<group>"; };
 		F9DE213A2B1111C2007B1133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		F9D8E0232B155035005CEEDD /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F9D8E0242B15504B005CEEDD /* Realm.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		F9DE212A2B1111C1007B1133 = {
 			isa = PBXGroup;
 			children = (
@@ -146,14 +156,15 @@
 		F9DE21352B1111C1007B1133 /* Clipy */ = {
 			isa = PBXGroup;
 			children = (
+				F9D8E0232B155035005CEEDD /* Config */,
 				F983C1DE2B13C74A00D7282E /* Listeners */,
 				F9C4D9CD2B13E9A100E153AC /* Views */,
 				F9DE21362B1111C1007B1133 /* ClipyApp.swift */,
+				F9C4D9D42B14124E00E153AC /* AppDelegate.swift */,
 				F9DE213A2B1111C2007B1133 /* Assets.xcassets */,
 				F9DE213F2B1111C2007B1133 /* Clipy.entitlements */,
 				F9DE213C2B1111C2007B1133 /* Preview Content */,
 				F983C1E22B13CD1C00D7282E /* swiftlint.yml */,
-				F9C4D9D42B14124E00E153AC /* AppDelegate.swift */,
 			);
 			path = Clipy;
 			sourceTree = "<group>";
@@ -350,6 +361,7 @@
 				F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */,
 				F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */,
 				F9DE21662B1171D5007B1133 /* AppearanceSettingsTabView.swift in Sources */,
+				F9D8E0252B15504B005CEEDD /* Realm.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
