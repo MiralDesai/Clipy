@@ -1,14 +1,27 @@
-disabled_rules:
-- trailing_whitespace
-
 opt_in_rules:
-- empty_count
-- empty_string
+  - convenience_type
+  - empty_count
+  - empty_string
+  - fatal_error_message
+  - file_name
+  - first_where
+  - modifier_order
+  - prohibited_interface_builder
+  - toggle_bool
+  - unused_private_declaration
+  - fallthrough
+  - identical_operands
+  - joined_default_parameter
+  - unavailable_function
+  - overridden_super_call
 
 excluded:
 - Carthage
 - Pods
 - SwiftLint/Common/3rdPartyLib
+  
+identifier_name:
+  allowed_symbols: "_"
 
 line_length:
   error: 120
@@ -34,5 +47,5 @@ file_length:
 cyclomatic_complexity:
   warning: 15
   error: 25
-  
+
 reporter: "xcode"

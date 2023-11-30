@@ -139,6 +139,7 @@
 				F9DE21352B1111C1007B1133 /* Clipy */,
 				F9DE21472B1111C2007B1133 /* ClipyTests */,
 				F9DE21512B1111C2007B1133 /* ClipyUITests */,
+				F983C1E22B13CD1C00D7282E /* swiftlint.yml */,
 				F9DE21342B1111C1007B1133 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -164,7 +165,6 @@
 				F9DE213A2B1111C2007B1133 /* Assets.xcassets */,
 				F9DE213F2B1111C2007B1133 /* Clipy.entitlements */,
 				F9DE213C2B1111C2007B1133 /* Preview Content */,
-				F983C1E22B13CD1C00D7282E /* swiftlint.yml */,
 			);
 			path = Clipy;
 			sourceTree = "<group>";
