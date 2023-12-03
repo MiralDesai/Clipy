@@ -112,6 +112,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F95F5E512B1D44AF00D21C49 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F983C1DE2B13C74A00D7282E /* Listeners */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F983C1DE2B13C74A00D7282E /* Listeners */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,11 +195,11 @@
 		F9DE21352B1111C1007B1133 /* Clipy */ = {
 			isa = PBXGroup;
 			children = (
-				F95F5E4C2B1AB12200D21C49 /* Extensions */,
-				F93A80DB2B1932DE00F45228 /* Repositories */,
-				F9AD9C102B16927300123E7E /* Models */,
 				F9D8E0232B155035005CEEDD /* Config */,
-				F983C1DE2B13C74A00D7282E /* Listeners */,
+				F95F5E4C2B1AB12200D21C49 /* Extensions */,
+				F9AD9C102B16927300123E7E /* Models */,
+				F93A80DB2B1932DE00F45228 /* Repositories */,
+				F95F5E512B1D44AF00D21C49 /* Services */,
 				F9C4D9CD2B13E9A100E153AC /* Views */,
 				F9DE21362B1111C1007B1133 /* ClipyApp.swift */,
 				F9C4D9D42B14124E00E153AC /* AppDelegate.swift */,
