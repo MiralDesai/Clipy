@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F983C1E32B13CD1C00D7282E /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F983C1E22B13CD1C00D7282E /* swiftlint.yml */; };
+		F93A80DD2B1932F500F45228 /* ClipRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93A80DC2B1932F500F45228 /* ClipRepository.swift */; };
+		F95F5E4E2B1AB38900D21C49 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F5E4D2B1AB38900D21C49 /* Date.swift */; };
+		F95F5E502B1BC4FC00D21C49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */; };
+		F9AD9C132B169AF400123E7E /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD9C122B169AF400123E7E /* Clip.swift */; };
 		F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D02B13ECB900E153AC /* AppMenu.swift */; };
 		F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D22B13F33F00E153AC /* CopyListener.swift */; };
 		F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D42B14124E00E153AC /* AppDelegate.swift */; };
@@ -43,7 +46,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F983C1E22B13CD1C00D7282E /* swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftlint.yml; sourceTree = "<group>"; };
+		F93A80DC2B1932F500F45228 /* ClipRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipRepository.swift; sourceTree = "<group>"; };
+		F95F5E4D2B1AB38900D21C49 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		F9AD9C122B169AF400123E7E /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
 		F9C4D9D02B13ECB900E153AC /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		F9C4D9D22B13F33F00E153AC /* CopyListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListener.swift; sourceTree = "<group>"; };
 		F9C4D9D42B14124E00E153AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,12 +96,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F93A80DB2B1932DE00F45228 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F93A80DC2B1932F500F45228 /* ClipRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F95F5E4C2B1AB12200D21C49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F95F5E4D2B1AB38900D21C49 /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F983C1DE2B13C74A00D7282E /* Listeners */ = {
 			isa = PBXGroup;
 			children = (
 				F9C4D9D22B13F33F00E153AC /* CopyListener.swift */,
 			);
 			path = Listeners;
+			sourceTree = "<group>";
+		};
+		F9AD9C102B16927300123E7E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9AD9C122B169AF400123E7E /* Clip.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		F9C4D9CD2B13E9A100E153AC /* Views */ = {
@@ -139,7 +169,7 @@
 				F9DE21352B1111C1007B1133 /* Clipy */,
 				F9DE21472B1111C2007B1133 /* ClipyTests */,
 				F9DE21512B1111C2007B1133 /* ClipyUITests */,
-				F983C1E22B13CD1C00D7282E /* swiftlint.yml */,
+				F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */,
 				F9DE21342B1111C1007B1133 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,6 +187,9 @@
 		F9DE21352B1111C1007B1133 /* Clipy */ = {
 			isa = PBXGroup;
 			children = (
+				F95F5E4C2B1AB12200D21C49 /* Extensions */,
+				F93A80DB2B1932DE00F45228 /* Repositories */,
+				F9AD9C102B16927300123E7E /* Models */,
 				F9D8E0232B155035005CEEDD /* Config */,
 				F983C1DE2B13C74A00D7282E /* Listeners */,
 				F9C4D9CD2B13E9A100E153AC /* Views */,
@@ -306,8 +339,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F95F5E502B1BC4FC00D21C49 /* .swiftlint.yml in Resources */,
 				F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */,
-				F983C1E32B13CD1C00D7282E /* swiftlint.yml in Resources */,
 				F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,11 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */,
+				F9AD9C132B169AF400123E7E /* Clip.swift in Sources */,
 				F9DE21642B116C8D007B1133 /* GeneralSettingsTabView.swift in Sources */,
 				F9DE21622B11684B007B1133 /* SettingsView.swift in Sources */,
 				F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */,
 				F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */,
 				F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */,
+				F93A80DD2B1932F500F45228 /* ClipRepository.swift in Sources */,
+				F95F5E4E2B1AB38900D21C49 /* Date.swift in Sources */,
 				F9DE21662B1171D5007B1133 /* AppearanceSettingsTabView.swift in Sources */,
 				F9D8E0252B15504B005CEEDD /* Realm.swift in Sources */,
 			);

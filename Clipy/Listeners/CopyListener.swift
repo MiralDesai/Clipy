@@ -14,9 +14,11 @@ class CopyListener {
     let pasteboard = NSPasteboard.general
     var lastChangeCount = pasteboard.changeCount
 
-    Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+    Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _timer in
       if pasteboard.changeCount != lastChangeCount {
         // Pasteboard changed, do something
+        ClipRepository.init().upsert()
+
         lastChangeCount = pasteboard.changeCount
       }
     }
