@@ -9,16 +9,30 @@
 
 import SwiftUI
 
-class CopyListener {
-  static func start() {
+class CopyListener: ObservableObject {
+  @Published var clipAdded: Bool = false
+  
+  private static var sharedListener: CopyListener?
+  
+  static func shared() -> CopyListener {
+    if let existingListener = sharedListener {
+      return existingListener
+    } else {
+      let newListener = CopyListener()
+      sharedListener = newListener
+      return newListener
+    }
+  }
+  
+  func start() {
     let pasteboard = NSPasteboard.general
     var lastChangeCount = pasteboard.changeCount
-
+    
     Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _timer in
       if pasteboard.changeCount != lastChangeCount {
         // Pasteboard changed, do something
         ClipRepository.init().upsert()
-
+        self.clipAdded = true
         lastChangeCount = pasteboard.changeCount
       }
     }

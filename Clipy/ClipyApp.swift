@@ -13,6 +13,6 @@ struct ClipyApp: App {
 
   var body: some Scene {
     Settings { SettingsView().frame(maxWidth: .infinity) }.windowResizability(.automatic)
-    MenuBarExtra("a", systemImage: "a.circle") { AppMenu() }
+    MenuBarExtra("Clipy", systemImage: "clipboard") { AppMenu(viewModel: AppMenuViewModel()) }
   }
 }

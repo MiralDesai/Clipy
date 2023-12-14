@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F916676A2B28EBB40089221B /* ClipsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91667692B28EBB40089221B /* ClipsList.swift */; };
+		F916676C2B28EBDE0089221B /* ClipRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F916676B2B28EBDE0089221B /* ClipRow.swift */; };
+		F91C3AB82B23430800136510 /* AppMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C3AB72B23430800136510 /* AppMenuViewModel.swift */; };
+		F91C3ABC2B23940600136510 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F91C3ABB2B23940600136510 /* String.swift */; };
 		F93A80DD2B1932F500F45228 /* ClipRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93A80DC2B1932F500F45228 /* ClipRepository.swift */; };
+		F93AB6912B2B4CBE00629966 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93AB6902B2B4CBE00629966 /* Results.swift */; };
 		F95F5E4E2B1AB38900D21C49 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F5E4D2B1AB38900D21C49 /* Date.swift */; };
 		F95F5E502B1BC4FC00D21C49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */; };
 		F9AD9C132B169AF400123E7E /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD9C122B169AF400123E7E /* Clip.swift */; };
@@ -46,7 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F91667692B28EBB40089221B /* ClipsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipsList.swift; sourceTree = "<group>"; };
+		F916676B2B28EBDE0089221B /* ClipRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipRow.swift; sourceTree = "<group>"; };
+		F91C3AB72B23430800136510 /* AppMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuViewModel.swift; sourceTree = "<group>"; };
+		F91C3ABB2B23940600136510 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F93A80DC2B1932F500F45228 /* ClipRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipRepository.swift; sourceTree = "<group>"; };
+		F93AB6902B2B4CBE00629966 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		F95F5E4D2B1AB38900D21C49 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		F9AD9C122B169AF400123E7E /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
@@ -108,6 +118,8 @@
 			isa = PBXGroup;
 			children = (
 				F95F5E4D2B1AB38900D21C49 /* Date.swift */,
+				F91C3ABB2B23940600136510 /* String.swift */,
+				F93AB6902B2B4CBE00629966 /* Results.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -149,6 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				F9C4D9D02B13ECB900E153AC /* AppMenu.swift */,
+				F91C3AB72B23430800136510 /* AppMenuViewModel.swift */,
+				F91667692B28EBB40089221B /* ClipsList.swift */,
+				F916676B2B28EBDE0089221B /* ClipRow.swift */,
 			);
 			path = Menubar;
 			sourceTree = "<group>";
@@ -396,12 +411,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */,
+				F916676A2B28EBB40089221B /* ClipsList.swift in Sources */,
 				F9AD9C132B169AF400123E7E /* Clip.swift in Sources */,
 				F9DE21642B116C8D007B1133 /* GeneralSettingsTabView.swift in Sources */,
 				F9DE21622B11684B007B1133 /* SettingsView.swift in Sources */,
+				F91C3ABC2B23940600136510 /* String.swift in Sources */,
 				F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */,
 				F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */,
+				F916676C2B28EBDE0089221B /* ClipRow.swift in Sources */,
 				F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */,
+				F93AB6912B2B4CBE00629966 /* Results.swift in Sources */,
+				F91C3AB82B23430800136510 /* AppMenuViewModel.swift in Sources */,
 				F93A80DD2B1932F500F45228 /* ClipRepository.swift in Sources */,
 				F95F5E4E2B1AB38900D21C49 /* Date.swift in Sources */,
 				F9DE21662B1171D5007B1133 /* AppearanceSettingsTabView.swift in Sources */,

@@ -9,21 +9,31 @@ import SwiftUI
 import RealmSwift
 
 struct AppMenu: View {
+  @ObservedObject var viewModel: AppMenuViewModel
+
   var body: some View {
+    let counts = viewModel.clipCounts(for: viewModel.clips)
+
+    VStack {
+      ForEach(viewModel.clips.indices, id: \.self) { (index) in
+        let batch = viewModel.clips[index]
+        Menu {
+          ClipsList(clips: batch)
+        } label: {
+          Image(systemName: "folder")
+          Text("\(counts[index])")
+        }
+      }
+    }
     Divider()
-    Button("Clear history") { clearClipboardHistory() }.keyboardShortcut(KeyEquivalent.delete, modifiers: [.command, .option])
+    Button("Clear history") {
+      viewModel.clearClipboardHistory()
+    }.keyboardShortcut(KeyEquivalent.delete, modifiers: [.command, .option])
     SettingsLink {Text("Preferences")}.keyboardShortcut(",")
     Button("Quit") {NSApplication.shared.terminate(nil)}.keyboardShortcut("Q")
   }
 }
 
-func clearClipboardHistory() {
-  let realm = try! Realm()
-  try! realm.write {
-    realm.deleteAll()
-  }
-}
-
 #Preview {
-  AppMenu()
+  AppMenu(viewModel: AppMenuViewModel())
 }

@@ -13,10 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     print("Clipy started up!")
     /// TODO: Remove before release, for development only
     let config = Realm.Configuration(deleteRealmIfMigrationNeeded: true)
-    let realm = try! Realm(configuration: config)
+    let _realm = try! Realm(configuration: config)
 
-    ClipRepository().read()
-
-    CopyListener.start()
+    CopyListener.shared().start()
   }
 }
