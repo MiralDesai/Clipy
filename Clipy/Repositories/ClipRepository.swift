@@ -15,29 +15,12 @@ class ClipRepository {
     self.realm = realm
   }
 
-  // TODO: Move this method somewhere else 
-  func getStringFromClipboard() -> Data? {
-    guard let copiedString = NSPasteboard.general.string(forType: .string)?.data(using: .utf8)  else {
-      return nil
-    }
-    return copiedString
-  }
-
-  func upsert() {
-    let content = getStringFromClipboard()
-    guard content != nil else { return }
-
-    let clip = Clip()
-    clip.content = content!
-    clip.type = ClipType.string
-    clip.createdAt = Date().unixTimestamp
-    clip.updatedAt = Date().unixTimestamp
-
+  func upsert(_ clip: Clip) {
     try! realm.write {
       realm.add(clip)
     }
   }
-  
+
   func deleteAll() {
     let allClips = realm.objects(Clip.self)
 
