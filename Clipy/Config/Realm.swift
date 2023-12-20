@@ -10,7 +10,7 @@ import RealmSwift
 extension Realm {
   static func migration() {
     let config = Realm.Configuration(schemaVersion: 0, migrationBlock: { _migration, _oldSchemaVersion in
-    })
+    }, deleteRealmIfMigrationNeeded: true)
 
     Realm.Configuration.defaultConfiguration = config
 

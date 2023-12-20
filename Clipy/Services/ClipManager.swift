@@ -8,7 +8,7 @@ import SwiftUI
 
 class ClipManager {
   let clipRepository: ClipRepository
-  
+
   init(clipRepository: ClipRepository = ClipRepository.init()) {
     self.clipRepository = clipRepository
   }

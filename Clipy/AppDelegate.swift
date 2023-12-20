@@ -10,11 +10,6 @@ import RealmSwift
 
 class AppDelegate: NSObject, NSApplicationDelegate {
   func applicationDidFinishLaunching(_ notification: Notification) {
-    print("Clipy started up!")
-    /// TODO: Remove before release, for development only
-    let config = Realm.Configuration(deleteRealmIfMigrationNeeded: true)
-    let _realm = try! Realm(configuration: config)
-
     CopyListener.shared().start()
   }
 }
