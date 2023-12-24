@@ -30,6 +30,7 @@ class CopyListener: ObservableObject {
 
     Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _timer in
       if pasteboard.changeCount != lastChangeCount {
+        print("Clipboard changed")
         ClipManager.init().processChange()
         self.clipAdded = true
         lastChangeCount = pasteboard.changeCount

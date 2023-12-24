@@ -9,7 +9,7 @@ import SwiftUI
 import RealmSwift
 
 enum ClipType: String, PersistableEnum {
-  case string = ".string"
+  case string = "public.utf8-plain-text"
   case color = ".color"
 }
 

@@ -12,9 +12,10 @@ struct ClipRow: View {
 
   var body: some View {
     Button {
-      print("Clip selected: \(clip.updatedAt)")
+      NSPasteboard.general.clearContents()
+      NSPasteboard.general.setData(clip.content, forType: NSPasteboard.PasteboardType(clip.type.rawValue))
     } label: {
-      Text(String(data: clip.content, encoding: .utf8)!.truncate(length: 30))
+      Text(clip.content.toString().truncate(length: 30))
     }
   }
 }

@@ -17,7 +17,7 @@ class AppMenuViewModel: ObservableObject {
 
   init() {
     sortClips(in: 10, clips: allClipboardItems())
-    // Subscribe to changes in CopyListener's clipAdded
+
     copyListener.$clipAdded.sink { [weak self] clipAdded in
       guard let self = self else { return }
 
