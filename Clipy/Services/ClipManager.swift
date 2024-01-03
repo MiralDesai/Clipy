@@ -17,13 +17,12 @@ class ClipManager {
     let content = getStringFromClipboard()
     guard content != nil else { return }
 
-    let clip = Clip()
-    clip.content = content!
-    clip.type = ClipType.string
-    clip.createdAt = Date().unixTimestamp
-    clip.updatedAt = Date().unixTimestamp
-
-    clipRepository.upsert(clip)
+    let existingClip = clipRepository.findByContent(content: content!)
+    if let existingClip = existingClip {
+      clipRepository.refreshUpdatedAt(existingClip)
+    } else {
+      createClip(content!)
+    }
   }
 
   private
@@ -33,5 +32,15 @@ class ClipManager {
       return nil
     }
     return copiedString
+  }
+
+  func createClip(_ content: Data) {
+    let clip = Clip()
+    clip.content = content
+    clip.type = ClipType.string
+    clip.createdAt = Date().unixTimestamp
+    clip.updatedAt = Date().unixTimestamp
+
+    clipRepository.upsert(clip)
   }
 }

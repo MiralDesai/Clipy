@@ -21,6 +21,12 @@ class ClipRepository {
     }
   }
 
+  func refreshUpdatedAt(_ clip: Clip) {
+    try! realm.write {
+      clip.updatedAt = Date().unixTimestamp
+    }
+  }
+
   func deleteAll() {
     let allClips = realm.objects(Clip.self)
 
@@ -31,5 +37,9 @@ class ClipRepository {
 
   func sortedByUpdatedAt() -> Results<Clip> {
     realm.objects(Clip.self).sorted(byKeyPath: "updatedAt", ascending: false)
+  }
+
+  func findByContent(content: Data) -> Clip? {
+    realm.objects(Clip.self).where { $0.content == content }.first
   }
 }
