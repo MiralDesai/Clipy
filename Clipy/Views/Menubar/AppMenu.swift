@@ -27,6 +27,7 @@ struct AppMenu: View {
     }
     Divider()
     Button("Clear history") {
+      viewModel.clips = []
       viewModel.clearClipboardHistory()
     }.keyboardShortcut(KeyEquivalent.delete, modifiers: [.command, .option])
     SettingsLink {Text("Preferences")}.keyboardShortcut(",")
