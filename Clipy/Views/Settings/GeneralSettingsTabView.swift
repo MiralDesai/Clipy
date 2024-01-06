@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import KeyboardShortcuts
 
 struct GeneralSettingsTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      Form {
+        KeyboardShortcuts.Recorder("Open menu:", name: .openMenu)
+      }
     }
 }
 

@@ -24,6 +24,8 @@
 		F9D8E0202B153BBF005CEEDD /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F9D8E01F2B153BBF005CEEDD /* RealmSwift */; };
 		F9D8E0252B15504B005CEEDD /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D8E0242B15504B005CEEDD /* Realm.swift */; };
 		F9DDD8492B3761FC00739BF8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDD8482B3761FC00739BF8 /* Data.swift */; };
+		F9DDD8642B48CF5000739BF8 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = F9DDD8632B48CF5000739BF8 /* KeyboardShortcuts */; };
+		F9DDD8662B48D33400739BF8 /* KeyboardShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDD8652B48D33400739BF8 /* KeyboardShortcuts.swift */; };
 		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
 		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
 		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
@@ -68,6 +70,7 @@
 		F9C4D9D42B14124E00E153AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9D8E0242B15504B005CEEDD /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		F9DDD8482B3761FC00739BF8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		F9DDD8652B48D33400739BF8 /* KeyboardShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcuts.swift; sourceTree = "<group>"; };
 		F9DE21332B1111C1007B1133 /* Clipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DE21362B1111C1007B1133 /* ClipyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyApp.swift; sourceTree = "<group>"; };
 		F9DE213A2B1111C2007B1133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,6 +93,7 @@
 			files = (
 				F9D8E0202B153BBF005CEEDD /* RealmSwift in Frameworks */,
 				F9D8E01E2B153BBF005CEEDD /* Realm in Frameworks */,
+				F9DDD8642B48CF5000739BF8 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +129,7 @@
 				F91C3ABB2B23940600136510 /* String.swift */,
 				F93AB6902B2B4CBE00629966 /* Results.swift */,
 				F9DDD8482B3761FC00739BF8 /* Data.swift */,
+				F9DDD8652B48D33400739BF8 /* KeyboardShortcuts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +281,7 @@
 			packageProductDependencies = (
 				F9D8E01D2B153BBF005CEEDD /* Realm */,
 				F9D8E01F2B153BBF005CEEDD /* RealmSwift */,
+				F9DDD8632B48CF5000739BF8 /* KeyboardShortcuts */,
 			);
 			productName = Clipy;
 			productReference = F9DE21332B1111C1007B1133 /* Clipy.app */;
@@ -351,6 +357,7 @@
 			mainGroup = F9DE212A2B1111C1007B1133;
 			packageReferences = (
 				F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */,
+				F9DDD8622B48CF5000739BF8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 			);
 			productRefGroup = F9DE21342B1111C1007B1133 /* Products */;
 			projectDirPath = "";
@@ -416,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DDD8662B48D33400739BF8 /* KeyboardShortcuts.swift in Sources */,
 				F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */,
 				F916676A2B28EBB40089221B /* ClipsList.swift in Sources */,
 				F9AD9C132B169AF400123E7E /* Clip.swift in Sources */,
@@ -760,6 +768,14 @@
 				minimumVersion = 10.44.0;
 			};
 		};
+		F9DDD8622B48CF5000739BF8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.16.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -772,6 +788,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		F9DDD8632B48CF5000739BF8 /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9DDD8622B48CF5000739BF8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
