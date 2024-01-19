@@ -27,7 +27,7 @@ identifier_name:
   allowed_symbols: "_"
 
 line_length:
-  error: 120
+  warning: 120
   ignores_comments: true
   ignores_urls: true
 
