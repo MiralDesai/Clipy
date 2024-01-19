@@ -26,6 +26,10 @@
 		F9DDD8492B3761FC00739BF8 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDD8482B3761FC00739BF8 /* Data.swift */; };
 		F9DDD8642B48CF5000739BF8 /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = F9DDD8632B48CF5000739BF8 /* KeyboardShortcuts */; };
 		F9DDD8662B48D33400739BF8 /* KeyboardShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDD8652B48D33400739BF8 /* KeyboardShortcuts.swift */; };
+		F9DDD8682B4B196400739BF8 /* PasteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDD8672B4B196400739BF8 /* PasteManager.swift */; };
+		F9DDD86A2B4E018600739BF8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDD8692B4E018600739BF8 /* Constants.swift */; };
+		F9DDD86C2B5200FE00739BF8 /* ShortcutEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DDD86B2B5200FE00739BF8 /* ShortcutEvent.swift */; };
+		F9DDD86F2B53047900739BF8 /* Sauce in Frameworks */ = {isa = PBXBuildFile; productRef = F9DDD86E2B53047900739BF8 /* Sauce */; };
 		F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DE21362B1111C1007B1133 /* ClipyApp.swift */; };
 		F9DE213B2B1111C2007B1133 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213A2B1111C2007B1133 /* Assets.xcassets */; };
 		F9DE213E2B1111C2007B1133 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DE213D2B1111C2007B1133 /* Preview Assets.xcassets */; };
@@ -71,6 +75,9 @@
 		F9D8E0242B15504B005CEEDD /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		F9DDD8482B3761FC00739BF8 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		F9DDD8652B48D33400739BF8 /* KeyboardShortcuts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardShortcuts.swift; sourceTree = "<group>"; };
+		F9DDD8672B4B196400739BF8 /* PasteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteManager.swift; sourceTree = "<group>"; };
+		F9DDD8692B4E018600739BF8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F9DDD86B2B5200FE00739BF8 /* ShortcutEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortcutEvent.swift; sourceTree = "<group>"; };
 		F9DE21332B1111C1007B1133 /* Clipy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clipy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9DE21362B1111C1007B1133 /* ClipyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipyApp.swift; sourceTree = "<group>"; };
 		F9DE213A2B1111C2007B1133 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +100,7 @@
 			files = (
 				F9D8E0202B153BBF005CEEDD /* RealmSwift in Frameworks */,
 				F9D8E01E2B153BBF005CEEDD /* Realm in Frameworks */,
+				F9DDD86F2B53047900739BF8 /* Sauce in Frameworks */,
 				F9DDD8642B48CF5000739BF8 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +147,7 @@
 			children = (
 				F983C1DE2B13C74A00D7282E /* Listeners */,
 				F93AB6922B2CF98300629966 /* ClipManager.swift */,
+				F9DDD8672B4B196400739BF8 /* PasteManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -147,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				F9C4D9D22B13F33F00E153AC /* CopyListener.swift */,
+				F9DDD86B2B5200FE00739BF8 /* ShortcutEvent.swift */,
 			);
 			path = Listeners;
 			sourceTree = "<group>";
@@ -193,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				F9D8E0242B15504B005CEEDD /* Realm.swift */,
+				F9DDD8692B4E018600739BF8 /* Constants.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -282,6 +293,7 @@
 				F9D8E01D2B153BBF005CEEDD /* Realm */,
 				F9D8E01F2B153BBF005CEEDD /* RealmSwift */,
 				F9DDD8632B48CF5000739BF8 /* KeyboardShortcuts */,
+				F9DDD86E2B53047900739BF8 /* Sauce */,
 			);
 			productName = Clipy;
 			productReference = F9DE21332B1111C1007B1133 /* Clipy.app */;
@@ -358,6 +370,7 @@
 			packageReferences = (
 				F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */,
 				F9DDD8622B48CF5000739BF8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				F9DDD86D2B53047900739BF8 /* XCRemoteSwiftPackageReference "Sauce" */,
 			);
 			productRefGroup = F9DE21342B1111C1007B1133 /* Products */;
 			projectDirPath = "";
@@ -423,6 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DDD86C2B5200FE00739BF8 /* ShortcutEvent.swift in Sources */,
 				F9DDD8662B48D33400739BF8 /* KeyboardShortcuts.swift in Sources */,
 				F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */,
 				F916676A2B28EBB40089221B /* ClipsList.swift in Sources */,
@@ -432,7 +446,9 @@
 				F91C3ABC2B23940600136510 /* String.swift in Sources */,
 				F9DE21372B1111C1007B1133 /* ClipyApp.swift in Sources */,
 				F9DDD8492B3761FC00739BF8 /* Data.swift in Sources */,
+				F9DDD8682B4B196400739BF8 /* PasteManager.swift in Sources */,
 				F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */,
+				F9DDD86A2B4E018600739BF8 /* Constants.swift in Sources */,
 				F916676C2B28EBDE0089221B /* ClipRow.swift in Sources */,
 				F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */,
 				F93AB6912B2B4CBE00629966 /* Results.swift in Sources */,
@@ -609,13 +625,15 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Clipy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.Clipy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -636,13 +654,15 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Clipy;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.miraldesai.Clipy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -776,6 +796,14 @@
 				minimumVersion = 1.16.1;
 			};
 		};
+		F9DDD86D2B53047900739BF8 /* XCRemoteSwiftPackageReference "Sauce" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Clipy/Sauce/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -793,6 +821,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F9DDD8622B48CF5000739BF8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
 			productName = KeyboardShortcuts;
+		};
+		F9DDD86E2B53047900739BF8 /* Sauce */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9DDD86D2B53047900739BF8 /* XCRemoteSwiftPackageReference "Sauce" */;
+			productName = Sauce;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
