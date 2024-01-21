@@ -19,6 +19,9 @@ struct SettingsView: View {
       AppearanceSettingsTabView()
         .tabItem { Label("Appearance", systemImage: "paintpalette") }
         .tag(Tabs.appearence)
+      AboutView()
+        .tabItem { Label("About", systemImage: "paintpalette") }
+        .tag(Tabs.appearence)
     }
     .frame(width: 450)
     .animation(Animation

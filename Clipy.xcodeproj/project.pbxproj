@@ -16,6 +16,8 @@
 		F93AB6932B2CF98300629966 /* ClipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93AB6922B2CF98300629966 /* ClipManager.swift */; };
 		F95F5E4E2B1AB38900D21C49 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F5E4D2B1AB38900D21C49 /* Date.swift */; };
 		F95F5E502B1BC4FC00D21C49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */; };
+		F96742A62B5C9BD100DCA693 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96742A52B5C9BD100DCA693 /* AboutView.swift */; };
+		F96742A82B5C9EA100DCA693 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96742A72B5C9EA100DCA693 /* Bundle.swift */; };
 		F9AD9C132B169AF400123E7E /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD9C122B169AF400123E7E /* Clip.swift */; };
 		F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D02B13ECB900E153AC /* AppMenu.swift */; };
 		F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C4D9D22B13F33F00E153AC /* CopyListener.swift */; };
@@ -68,6 +70,8 @@
 		F93AB6922B2CF98300629966 /* ClipManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipManager.swift; sourceTree = "<group>"; };
 		F95F5E4D2B1AB38900D21C49 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		F96742A52B5C9BD100DCA693 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		F96742A72B5C9EA100DCA693 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		F9AD9C122B169AF400123E7E /* Clip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clip.swift; sourceTree = "<group>"; };
 		F9C4D9D02B13ECB900E153AC /* AppMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenu.swift; sourceTree = "<group>"; };
 		F9C4D9D22B13F33F00E153AC /* CopyListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyListener.swift; sourceTree = "<group>"; };
@@ -138,6 +142,7 @@
 				F93AB6902B2B4CBE00629966 /* Results.swift */,
 				F9DDD8482B3761FC00739BF8 /* Data.swift */,
 				F9DDD8652B48D33400739BF8 /* KeyboardShortcuts.swift */,
+				F96742A72B5C9EA100DCA693 /* Bundle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 				F9DE21612B11684B007B1133 /* SettingsView.swift */,
 				F9DE21632B116C8D007B1133 /* GeneralSettingsTabView.swift */,
 				F9DE21652B1171D5007B1133 /* AppearanceSettingsTabView.swift */,
+				F96742A52B5C9BD100DCA693 /* AboutView.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -437,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9DDD86C2B5200FE00739BF8 /* ShortcutEvent.swift in Sources */,
+				F96742A82B5C9EA100DCA693 /* Bundle.swift in Sources */,
 				F9DDD8662B48D33400739BF8 /* KeyboardShortcuts.swift in Sources */,
 				F9C4D9D32B13F33F00E153AC /* CopyListener.swift in Sources */,
 				F916676A2B28EBB40089221B /* ClipsList.swift in Sources */,
@@ -449,6 +456,7 @@
 				F9DDD8682B4B196400739BF8 /* PasteManager.swift in Sources */,
 				F9C4D9D52B14124E00E153AC /* AppDelegate.swift in Sources */,
 				F9DDD86A2B4E018600739BF8 /* Constants.swift in Sources */,
+				F96742A62B5C9BD100DCA693 /* AboutView.swift in Sources */,
 				F916676C2B28EBDE0089221B /* ClipRow.swift in Sources */,
 				F9C4D9D12B13ECB900E153AC /* AppMenu.swift in Sources */,
 				F93AB6912B2B4CBE00629966 /* Results.swift in Sources */,
