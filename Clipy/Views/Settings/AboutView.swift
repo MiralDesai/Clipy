@@ -10,11 +10,12 @@ struct AboutView: View {
   var body: some View {
     VStack {
       Image(nsImage: NSImage(named: "AppIcon") ?? NSImage())
-      Text("Version: \(Bundle.main.appVersion) (\(Bundle.main.appBuild)) ")
       Text(Bundle.main.appName)
-          .font(.system(size: 10, weight: .thin))
-          .multilineTextAlignment(.center)
-    }
+        .font(.title2)
+      Text("Version: \(Bundle.main.appVersion) (\(Bundle.main.appBuild)) ")
+        .font(.subheadline)
+        .multilineTextAlignment(.center)
+    }.padding()
   }
 }
 
