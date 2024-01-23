@@ -23,7 +23,7 @@ struct SettingsView: View {
         .tabItem { Label("About", systemImage: "paintpalette") }
         .tag(Tabs.appearence)
     }
-    .frame(width: 450)
+    .frame(minWidth: 500)
     .animation(Animation
       .easeInOut(duration: 1.5)
       .repeatForever(autoreverses: true), value: UUID())

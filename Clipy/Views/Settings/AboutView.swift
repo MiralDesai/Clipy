@@ -11,7 +11,7 @@ struct AboutView: View {
     VStack {
       Image(nsImage: NSImage(named: "AppIcon") ?? NSImage())
       Text(Bundle.main.appName)
-        .font(.title2)
+        .font(.largeTitle)
       Text("Version: \(Bundle.main.appVersion) (\(Bundle.main.appBuild)) ")
         .font(.subheadline)
         .multilineTextAlignment(.center)
