@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct AppearanceSettingsTabView: View {
-  @AppStorage("showPreview") private var showPreview = true
-  @AppStorage("fontSize") private var fontSize = 12.0
+  @AppStorage(Constants.AppStorageKeys.menuBarIcon) var menuBarIcon = "clipboard"
 
   var body: some View {
-    Form {
-      Toggle("Show Previews", isOn: $showPreview)
-      Slider(value: $fontSize, in: 9...96) {
-        Text("Font Size (\(fontSize, specifier: "%.0f") pts)")
+    VStack(spacing: 0) {
+      Form {
+        Picker("Menu bar icon:", selection: $menuBarIcon) {
+          ForEach(Constants.MenuBar.iconList, id: \.self) {
+            Image(systemName: $0)
+          }
+        }.frame(maxWidth: 150)
+        Text("Requires application restart for changes to take affect").font(.footnote)
       }
     }.padding(20)
   }
