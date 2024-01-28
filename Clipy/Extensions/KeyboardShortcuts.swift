@@ -8,5 +8,5 @@
 import KeyboardShortcuts
 
 extension KeyboardShortcuts.Name {
-  static let openMenu = Self("openMenu", default: .init(.x, modifiers: [.command, .shift]))
+  static let openMenu = Self("openMenu", default: .init(.v, modifiers: [.command, .shift]))
 }
