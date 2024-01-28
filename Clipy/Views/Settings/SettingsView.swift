@@ -20,7 +20,7 @@ struct SettingsView: View {
         .tabItem { Label("Appearance", systemImage: "paintpalette") }
         .tag(Tabs.appearence)
       AboutView()
-        .tabItem { Label("About", systemImage: "paintpalette") }
+        .tabItem { Label("About", systemImage: "info.circle.fill") }
         .tag(Tabs.appearence)
     }
     .frame(minWidth: 500)
