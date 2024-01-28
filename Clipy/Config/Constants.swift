@@ -10,6 +10,7 @@ enum Constants {
     static let pasteImmediately = "paste_immediately"
     static let pasteWithFormatting = "paste_with_formatting"
     static let menuBarIcon = "menu_bar_icon"
+    static let clearSystemHistory = "clear_system_pasteboard"
   }
 
   enum MenuBar {

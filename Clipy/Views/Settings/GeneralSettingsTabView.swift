@@ -11,6 +11,7 @@ import KeyboardShortcuts
 struct GeneralSettingsTabView: View {
   @AppStorage(Constants.AppStorageKeys.pasteImmediately) private var pasteImmediately: Bool = true
   @AppStorage(Constants.AppStorageKeys.pasteWithFormatting) private var pasteWithFormatting: Bool = false
+  @AppStorage(Constants.AppStorageKeys.clearSystemHistory) private var clearSystemHistory: Bool = false
   private var permissedAllowed: Bool { AXIsProcessTrustedWithOptions(nil) }
 
   var body: some View {
@@ -20,8 +21,12 @@ struct GeneralSettingsTabView: View {
         Divider().padding(.bottom, 8).padding(.top, 8)
         Toggle("Paste immediately", isOn: $pasteImmediately).toggleStyle(.switch)
         Toggle("Paste with formatting", isOn: $pasteWithFormatting).toggleStyle(.switch)
+        Divider().padding(.bottom, 8).padding(.top, 8)
+        Toggle("Delete system clipboard", isOn: $clearSystemHistory).toggleStyle(.switch)
+        Text("Clear history will also delete system clipboard data.").font(.footnote)
+        Spacer()
       }
-      Divider().padding(.bottom, 8).padding(.top, 8)
+      Divider()
       HStack {
         Image(systemName: "accessibility.fill")
           .foregroundColor(permissedAllowed ? .green : .red)

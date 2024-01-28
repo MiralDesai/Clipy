@@ -14,6 +14,7 @@ class AppMenuViewModel: ObservableObject {
   @Published var clipsUpdated: Bool = false
   private var cancellables: Set<AnyCancellable> = []
   let copyListener = CopyListener.shared()
+  @State private var clearSystemHistory = UserDefaults.standard.bool(forKey: Constants.AppStorageKeys.clearSystemHistory)
 
   init() {
     sortClips(in: 10, clips: allClipboardItems())
@@ -62,6 +63,9 @@ class AppMenuViewModel: ObservableObject {
   }
 
   func clearClipboardHistory() {
+    if clearSystemHistory {
+      NSPasteboard.general.clearContents()
+    }
     ClipRepository().deleteAll()
   }
 }
