@@ -7,6 +7,7 @@
 
 import SwiftUI
 import KeyboardShortcuts
+import LaunchAtLogin
 
 struct GeneralSettingsTabView: View {
   @AppStorage(Constants.AppStorageKeys.pasteImmediately) private var pasteImmediately: Bool = true
@@ -17,6 +18,8 @@ struct GeneralSettingsTabView: View {
   var body: some View {
     VStack(spacing: 0) {
       Form {
+        LaunchAtLogin.Toggle().toggleStyle(.switch)
+        Divider().padding(.bottom, 8).padding(.top, 8)
         KeyboardShortcuts.Recorder("Open menu:", name: .openMenu)
         Divider().padding(.bottom, 8).padding(.top, 8)
         Toggle("Paste immediately", isOn: $pasteImmediately).toggleStyle(.switch)

@@ -16,6 +16,7 @@
 		F93AB6932B2CF98300629966 /* ClipManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93AB6922B2CF98300629966 /* ClipManager.swift */; };
 		F95F5E4E2B1AB38900D21C49 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95F5E4D2B1AB38900D21C49 /* Date.swift */; };
 		F95F5E502B1BC4FC00D21C49 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = F95F5E4F2B1BC4FC00D21C49 /* .swiftlint.yml */; };
+		F9608C552B67166400FFC2E9 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F9608C542B67166400FFC2E9 /* LaunchAtLogin */; };
 		F96742A62B5C9BD100DCA693 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96742A52B5C9BD100DCA693 /* AboutView.swift */; };
 		F96742A82B5C9EA100DCA693 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96742A72B5C9EA100DCA693 /* Bundle.swift */; };
 		F9AD9C132B169AF400123E7E /* Clip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AD9C122B169AF400123E7E /* Clip.swift */; };
@@ -105,6 +106,7 @@
 				F9D8E0202B153BBF005CEEDD /* RealmSwift in Frameworks */,
 				F9D8E01E2B153BBF005CEEDD /* Realm in Frameworks */,
 				F9DDD86F2B53047900739BF8 /* Sauce in Frameworks */,
+				F9608C552B67166400FFC2E9 /* LaunchAtLogin in Frameworks */,
 				F9DDD8642B48CF5000739BF8 /* KeyboardShortcuts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +302,7 @@
 				F9D8E01F2B153BBF005CEEDD /* RealmSwift */,
 				F9DDD8632B48CF5000739BF8 /* KeyboardShortcuts */,
 				F9DDD86E2B53047900739BF8 /* Sauce */,
+				F9608C542B67166400FFC2E9 /* LaunchAtLogin */,
 			);
 			productName = Clipy;
 			productReference = F9DE21332B1111C1007B1133 /* Clipy.app */;
@@ -377,6 +380,7 @@
 				F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */,
 				F9DDD8622B48CF5000739BF8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
 				F9DDD86D2B53047900739BF8 /* XCRemoteSwiftPackageReference "Sauce" */,
+				F9608C532B67166400FFC2E9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
 			productRefGroup = F9DE21342B1111C1007B1133 /* Products */;
 			projectDirPath = "";
@@ -791,6 +795,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F9608C532B67166400FFC2E9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
@@ -818,6 +830,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F9608C542B67166400FFC2E9 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F9608C532B67166400FFC2E9 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
 		F9D8E01D2B153BBF005CEEDD /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F9D8E01C2B153BBF005CEEDD /* XCRemoteSwiftPackageReference "realm-swift" */;
