@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RealmSwift
+import AppKit
 
 struct AppMenu: View {
   @ObservedObject var viewModel: AppMenuViewModel
@@ -30,7 +31,15 @@ struct AppMenu: View {
       viewModel.clips = []
       viewModel.clearClipboardHistory()
     }.keyboardShortcut(KeyEquivalent.delete, modifiers: [.command, .option])
-    SettingsLink {Text("Preferences")}.keyboardShortcut(",")
+    if #available(macOS 14.0, *) {
+      SettingsLink {Text("Preferences")}.keyboardShortcut(",")
+    } else {
+      Button {
+        NSApp.sendAction(Selector(("showSettingsWindow:")), to: nil, from: nil)
+      } label: {
+        Text("Preferences").keyboardShortcut(",")
+      }
+    }
     Button("Quit") {NSApplication.shared.terminate(nil)}.keyboardShortcut("Q")
   }
 }
