@@ -10,10 +10,15 @@ import RealmSwift
 
 enum ClipType: String, PersistableEnum {
   case string = "public.utf8-plain-text"
-  case color = ".color"
+  case filePath = "public.file-url"
 }
 
 class Clip: Object {
+  static let supportedTypes: [NSPasteboard.PasteboardType] = [
+    .string,
+    .fileURL
+  ]
+
   @Persisted(primaryKey: true) var _id: ObjectId
   @Persisted var content: Data
   @Persisted var type: ClipType
