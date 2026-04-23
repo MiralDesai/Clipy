@@ -813,7 +813,7 @@
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.44.0;
+				minimumVersion = 20.0.4;
 			};
 		};
 		F9DDD8622B48CF5000739BF8 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
